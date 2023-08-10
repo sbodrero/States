@@ -10,14 +10,14 @@ const RedundantStates = () => {
     setFullName(`${e.target.value} ${lastname}`);
   }
 
-  function handleFirstNameChanged(e) {
+  function handleLastNameChanged(e) {
     setLastname(e.target.value);
-    setFullName(`${e.target.value} ${lastname}`);
+    setFullName(`${firstname} ${lastname}`);
   }
 
   return (
     <>
-      <h1>Bonjour {firstname}</h1>
+      {fullName}
     </>
   )
 };

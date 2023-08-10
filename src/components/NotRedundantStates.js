@@ -10,13 +10,13 @@ const NotRedundantStates = () => {
     setFirstname(e.target.value);
   }
 
-  function handleFirstNameChanged(e) {
+  function handleLastNameChanged(e) {
     setLastname(e.target.value);
   }
 
   return (
     <>
-      <h1>Bonjour {firstname}</h1>
+      {fullName}
     </>
   )
 };
